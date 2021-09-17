@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./js/main.js"></script>
     <title>Javascript - DIO</title>
+
 </head>
-<body>
+<body onload="load()">
     <h1>Teste de Javascript</h1>
     <br><br>
     <script>
-        document.write(idade);
+        //document.write(idade);
     </script>
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <br><br>
+    <button type="button" onclick="msg_obg()">Clique aqui novamente</button>
+    <br><br>
+    <h3 id="msg_obg"></h3>
+    <br><br>
+    <button type="button" onclick="redirect()">Abrir a página</button>
+    <br><br>
+    <p id="mouse" onmouseover="mouse()" onmouseout="voltar()">Passe o mouse aqui.</p>
+    <p id="mouse" onmouseover="mouse2(this)" onmouseout="voltar2(this)">Passe o mouse aqui (this).</p>
+    <p onmouseover="mouse3(this)" onmouseout="voltar3(this)">Passe o mouse aqui (sem id).</p>
+    <p>
+    <select onchange="troca(this)">
+        <option value="1">Valor 1</option>
+        <option value="2" selected>Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    </p>
 </body>
 </html>

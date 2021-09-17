@@ -90,7 +90,56 @@ function validaidade(age) {
 }
 
 //var age = prompt("Digite sua idade:");
-console.log(validaidade(age));
+//console.log(validaidade(age));
 
 /////////////////////////////////////////////
+// Teste escrita na página
 
+function clicou(){
+    alert("Obrigado por clicar!");
+}
+
+function msg_obg() {
+    document.getElementById("msg_obg").innerHTML = "Obrigado por clicar novamente!";
+}
+
+function redirect() {
+    window.open("https://google.com","_blank");
+    //window.location.href = 'https://uol.com.br';
+
+}
+
+function mouse(){
+    document.getElementById("mouse").innerHTML = "Obrigado por passar o mouse!"
+    //alert('trocar msg');
+}
+
+function voltar(){
+    document.getElementById("mouse").innerHTML = "Passe o mouse aqui."
+}
+
+function mouse2(elemento){
+    elemento.innerHTML = "Obrigado por passar o mouse!"
+    //alert('trocar msg');
+}
+
+function voltar2(elemento){
+    elemento.innerHTML = "Passe o mouse aqui (this)."
+}
+
+function mouse3(elemento){
+    elemento.innerHTML = "Obrigado por passar o mouse!"
+    //alert('trocar msg');
+}
+
+function voltar3(elemento){
+    elemento.innerHTML = "Passe o mouse aqui (sem id)."
+}
+
+function load(){
+    console.log('Página carregada!');
+}
+
+function troca(elemento){
+    console.log(elemento.value);
+}
